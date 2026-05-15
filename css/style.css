@@ -1,0 +1,613 @@
+@font-face {
+    font-family: "inter";
+    src: url("fonts/InterVariable.ttf");
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "inter";
+    background-color: #1B2316;
+    margin: 0;
+    position: relative;
+    color: white;
+    background-image: url("/images/heroBannerBg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+
+body a{
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1920px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 33px;
+
+    
+}
+
+.siteTitleLogo{
+    display: flex;
+    align-items: center;
+}
+.siteLogo{
+    width: 48px;
+    height: 48px;
+}
+
+.siteTitle{
+    font-size: 28px;
+    letter-spacing: 0%;
+    color: white;
+    opacity: 0.75;
+}
+
+.siteTitleLink{
+    text-decoration: none;
+    color: white
+}
+
+.headerNav ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 24px;
+    letter-spacing: 0%;
+    color: white;
+    opacity: 0.75;
+    gap: 3.5vw;
+    padding: 0;
+
+}
+
+.headerNav ul li a{
+    text-decoration: none;
+    color: white
+}
+
+.plantsType{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.plantsType img:hover{
+    cursor: pointer;
+}
+.headerSearchDiv{
+    display: flex;
+    gap: 3.5vw;
+
+}
+
+.headerSearchDiv img{
+    height: 26px;
+    width: 26px;
+    opacity: 0.75;
+}
+
+.headerSearchDiv img:hover{
+    cursor: pointer;
+}
+
+.headerSearchDiv button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.hamMenu{
+    width: 100vw;
+    max-width: 350px;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    transform: translateY(-100%);
+    transition: transform 0.5s;
+    background-color: hsla(97, 23%, 11%, 0.767);
+    z-index: 10;
+    border-radius: 45px;
+}
+
+.hamMenuTransition{
+    transform: translateY(0)
+}
+
+
+.hamMenu ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.hamMenu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    opacity: 0.75;
+}
+
+.hamMenu ul li{
+    padding: 20px 30px;
+}
+
+.hamMenu i{
+    width: 35px;
+    align-self: flex-end;
+    color: white;
+    padding: 20px 0;
+}
+
+.hamMenu i:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 991px) {
+    .headerNav{
+        display: none;
+    }
+    header{
+        padding: 25px 3.5vw;
+    }
+}
+
+.home-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.home-hero-Heading{
+    grid-area: home-hero-Heading;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 0;
+    margin-bottom: 22%;
+    gap: 5px;
+}
+
+.home-hero-Plants{
+    grid-area: home-hero-Plants;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 77px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: relative;
+    width: clamp(0px, 40vw, 512px);
+    height: clamp(0px, 50.31vw, 644px);
+    padding: 0px 0 clamp(0px, 3.9vw, 50px) clamp(0px, 5.47vw, 70px);
+  
+}
+
+.home-hero-Reviews{
+    grid-area: home-hero-Reviews;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 45px;
+    height: clamp(0px, 27.52vw, 273px);
+    width: clamp(0px, 41.23vw, 409px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 34px;
+    gap: 22px;
+}
+
+.home-hero-container{
+    display: grid;
+    grid-template-areas: "home-hero-Heading home-hero-Plants"
+                         "home-hero-Reviews home-hero-Plants";  
+    padding: clamp(0px, 12.5%, 216px) 4.2% clamp(40px, 4%, 69px);
+}
+
+.home-hero-Heading h2{
+    font-size: clamp(0px, 11.9vw, 118px);
+    color: white;
+    opacity: 0.75;
+    margin: 0;
+    letter-spacing: 0%;
+    font-weight: 600;
+}
+
+.home-hero-Heading p{
+    font-size: 23px;
+    color: white;
+    opacity: 0.75;
+    margin: 0;
+    margin-right: 20%;
+    margin-bottom: 20px;
+}
+
+.home-hero-Links{
+    display: flex;
+    align-items: center;
+    gap: clamp(0px, 2.34vw, 30px);
+}
+
+.home-hero-Links .liveDemo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(0px, 1.171vw, 15px);
+}
+
+.home-hero-Links a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.75;
+}
+.explore{
+    font-size: clamp(14px, 3.65vw, 38px);
+    letter-spacing: 0%;
+    width: clamp(100px, 28.3vw, 217px);
+    height: clamp(36px, 8.344vw, 64px);
+    border: 2px solid white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore:hover{
+    background-color: white;
+    color: #1B2316;
+}
+.home-hero-Links .liveDemo div{
+    width: clamp(36px, 8.344vw, 64px);
+    height: clamp(36px, 8.344vw, 64px);
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.home-hero-Links .liveDemo img{
+    width: 38%;
+}
+
+.home-hero-Links .liveDemo p{
+    margin: 0
+}
+
+.home-hero-Plants .plantDetails{
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0px, 2.6vw, 20px);
+}
+.home-hero-Plants .plantDetails h4{
+    font-size: clamp(18px, 2.32vw, 23px);
+    letter-spacing: 0%;
+    color: white;
+    opacity: 0.75;
+    font-weight: 300;
+    margin: 0;
+}
+.home-hero-Plants .plantDetails h3{
+    font-size: clamp(0px, 3.83vw, 38px);
+    color: white;
+    opacity: 0.75;
+    font-weight: 300;
+    margin: 0;
+
+}
+
+.home-hero-Plants .plantDetails .explore{
+    opacity: 0.75;
+}
+
+.home-hero-Plants img{
+    position: absolute;
+    top: -137px;
+    left: 35px;
+    width: clamp(0px, 36vw, 461px);
+}
+
+.home-hero-Reviews .reviewer{
+    display: flex;
+    gap: clamp(0px, 2.822vw, 28px);
+    padding-left: 7px;
+}
+
+.home-hero-Reviews .reviewer .nameAndRating{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.home-hero-Reviews .reviewer .nameAndRating h3{
+    margin: 0;
+    font-size: 22px;
+    color: white;
+    font-weight: 400;
+}
+
+.home-hero-Reviews p{
+    margin: 0;
+    font-size: 17px;
+    color: white;
+    opacity: 0.75;
+}
+
+@media only screen and (max-width: 991px){
+    .home-hero{
+        grid-template-areas: "home-hero-Heading home-hero-Heading"
+                             "home-hero-Reviews home-hero-Plants";
+        padding-top: 25px;
+    }
+    .home-hero-Heading{
+        margin-bottom: 8vw;
+    }
+    .home-hero-Plants .plantDetails img{
+        top: -100px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+
+    .home-hero{
+        padding-top: 0;
+    }
+    .home-hero-container{
+        grid-template-areas: "home-hero-Heading"
+                             "home-hero-Plants" 
+                             "home-hero-Reviews";
+        gap: 5.1vw;
+        padding-top: 2.5%;
+    }
+
+    .home-hero-Heading{
+        margin-bottom: 0;
+        padding: 0 2%;
+    }
+
+    .home-hero-Heading p{
+        font-size: clamp(14px, 3vw, 23px);
+    }
+    .home-hero-Plants{
+        width: 100%;
+        height: clamp(176px, 38.46vw, 295px);
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 0 clamp(20px, 4vw, 30px);
+        justify-content: flex-end;
+        gap: 2vw;
+        border-radius: 45px;
+    }
+
+    .home-hero-Plants .plantDetails{
+        flex: 0 1 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .home-hero-Plants .plantDetails h4{
+        font-size: clamp(13px, 3vw, 23px);
+;
+    }
+    .home-hero-Plants .plantDetails h3{
+        font-size: clamp(17px, 4.95vw, 38px);
+
+    }
+
+    .home-hero-Plants  img{
+        width: clamp(0px, 34.81vw, 267.11px);
+        position: relative;
+        top: 0;
+        left: 0;
+        flex: 0 1 auto
+    }
+
+    .home-hero-Heading .home-hero-Links a, .home-hero-Plants .plantDetails a{
+        font-size: clamp(14px, 3.65vw, 38px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-hero-Reviews{
+        width: 100%;
+        height: clamp(176px, 27.64vw, 212px);
+        padding: 0 clamp(20px, 4vw, 30px);
+        gap: clamp(0px, 2.5vw, 20px);
+    }
+
+    .home-hero-Reviews p{
+        font-size: clamp(14px, 2.21vw, 17px);
+    }
+
+    .home-hero-Reviews .reviewer{
+        padding-left: 5px;
+    }
+
+}
+
+.home-hero-trendyPlants{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-hero-trendyPlants-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4.2%;
+    width: 100%;
+}
+
+.home-hero-trendyPlants-Heading{
+    position: relative;
+}
+
+.home-hero-trendyPlants-Heading h2{
+    font-size: clamp(0px, 5.54vw, 55px);
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0%;
+    margin: clamp(0px, 1.411vw, 14px) clamp(0px, 2.772vw, 27.5px);
+
+}
+
+
+
+.home-hero-trendyPlants-Heading .border{
+    width: clamp(0px, 6.955vw, 69px);
+    height: clamp(0px, 6.955vw, 69px);
+    
+    border: 3px solid greenyellow;
+    position: absolute;
+    bottom: 31px;
+
+}
+
+.home-hero-trendyPlants-Heading .border1{
+    border-top: none;
+    border-right: none;
+    left: 0;
+    bottom: 0;
+    border-radius: 0 0 0 clamp(0px, 2.318vw, 23px);
+}
+
+.home-hero-trendyPlants-Heading .border2{
+    border-bottom: none;
+    border-left: none;
+    border-radius: 0 clamp(0px, 2.318vw, 23px) 0 0;
+
+    right: 0;
+    top: 0;
+}
+
+
+.trendyPlantsDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6.85%;
+    gap: clamp(0px, 8.04vw, 137px);
+    width: 100%;
+}
+
+.trendyPlant{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 100%;
+    border-radius: clamp(0px, 8.37vw, 151px);
+    padding: clamp(0px, 7.3vw, 126px);
+}
+
+
+
+.trendyPlant1{
+    padding-right: 2%;
+    justify-content: flex-end;
+}
+.trendyPlant2{
+    padding-left: 9%;
+    justify-content: flex-start;
+}
+.trendyPlantImage{
+    position: absolute;
+    z-index: -1;
+}
+
+.trendyPlant1 img{
+    left: 4%;
+    bottom: 10%;
+    aspect-ratio: 668 / 612;
+    width: 42.21%;
+} 
+
+.trendyPlant2 img{
+    right: 11%;
+    bottom: 3%;
+    aspect-ratio: 406 / 613;
+    width: 25.7%;
+}
+
+.trendyPlantDetail{
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0px, 1.39vw, 24px);
+}
+
+.trendyPlantDetail h3{
+    font-size: clamp(17px, 3.83vw, 38px);
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 0%;
+}
+
+.trendyPlantDetailInfo{
+    font-size: clamp(12px, 2.6vw, 20px);
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 0%;
+}
+
+
+.trendyPlant .exploreAndCart{
+    display: flex;
+    gap: clamp(0px, 1.85vw, 32px);
+}
+
+.trendyPlant .bagDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width : clamp(36px, 8.344vw, 64px);
+    height: clamp(36px, 8.344vw, 64px);
+    border: 2px solid white;
+    border-radius: 12px;
+
+}
+
+.bagDiv .bag{
+    width: 53.125%;
+}
+
+@media only screen and (max-width: 991px){
+    .trendyPlantImage{
+ 
+    }
+    .trendyPlant{
+
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .trendyPlantImage{
+        opacity: 0.85;
+    }
+    .trendyPlantDetail{
+        width: 100%;
+    }
+
+    .trendyPlant1 img{
+        left: 56%
+    }
+}
