@@ -18,6 +18,7 @@ body{
     color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }   
 
 
@@ -61,6 +62,7 @@ header{
     justify-content: space-between;
     padding: clamp(0px, 3.298%, 57px);
     width: 100%;
+
 }
 
 .siteTitleLogo{
@@ -545,7 +547,7 @@ header{
         font-size: clamp(14px, 3vw, 23px);
     }
     .home-hero-Plants{
-        width: 100%;
+        /* width: 100%; */
         height: clamp(176px, 38.46vw, 295px);
         
         padding: 0 clamp(20px, 5vw, 40px);
@@ -631,6 +633,7 @@ header{
 
 .home-hero-trendyPlants-Heading{
     position: relative;
+    padding: clamp(0px, 1.411vw, 14px) clamp(0px, 2.772vw, 27.5px);;
 }
 
 .home-hero-trendyPlants-Heading h2{
@@ -638,7 +641,8 @@ header{
     color: white;
     font-weight: 500;
     letter-spacing: 0%;
-    margin: clamp(0px, 1.411vw, 14px) clamp(0px, 2.772vw, 27.5px);
+    /* margin: clamp(0px, 1.411vw, 14px) clamp(0px, 2.772vw, 27.5px); */
+    margin: 0;
 
 }
 
@@ -753,7 +757,7 @@ header{
     gap: clamp(0px, 1.85vw, 32px);
 }
 
-.trendyPlant .bagDiv{
+.bagDiv{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -795,5 +799,106 @@ header{
 
     .trendyPlant1 img{
         left: 56%
+    }
+}
+
+.home-top-selling-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 143px;
+}
+
+.home-top-selling-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 clamp(20px, 3.298vw, 57px);
+    gap: 189px;
+}
+
+.home-top-selling-div{
+    display: grid;
+    grid-template-columns: repeat(3, 31.72%);
+    width: 100%;
+    justify-content: space-between;
+    row-gap: 113px;
+}
+
+.home-top-selling-plant{
+    width: 100%;
+    max-width: 512px;
+    aspect-ratio: 512 / 644;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 77px;
+    /* padding: 0px 74px 51px 66px; */
+    padding: 0px clamp(0px, 3.82vw, 66px) clamp(0px, 3vw, 51px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.home-top-selling-plant-img{
+    width: 89.64%;
+    position: absolute;
+    left: 6%;
+    top: -17%;
+    z-index: -1;
+}
+
+
+.home-top-selling-plant-details{
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+
+.home-top-selling-plant-details h3{
+    font-size: 38px;
+    color: rgba(255, 255, 255, 0.75);
+    letter-spacing: 0%;
+    margin: 0;
+    font-weight: 400;
+}
+
+.home-top-selling-plant-details p{
+    font-size: 24px;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+}
+
+
+
+.home-top-selling-plant-cost-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-top-selling-plant-cost{
+    font-size: 38px;
+    color: rgba(255, 255, 255, 0.75);
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+.home-top-selling-plant-cost-div .bagDiv{
+    width: 55px;
+    height: 55px;
+    opacity: 0.75;
+}
+
+
+@media only screen and (max-width: 1280px){
+    .home-top-selling-div{
+        grid-template-columns: repeat(2, 40%);
+        justify-content: space-evenly;
+    }
+
+    .home-top-selling-plant{
+        /* padding: 0px 74px 51px 66px;  */
     }
 }
