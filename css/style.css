@@ -894,11 +894,17 @@ header{
 
 @media only screen and (max-width: 1280px){
     .home-top-selling-div{
-        grid-template-columns: repeat(2, 40%);
-        justify-content: space-evenly;
+        grid-template-columns: repeat(2, 44%);
+        justify-content: space-between;
     }
 
     .home-top-selling-plant{
         /* padding: 0px 74px 51px 66px;  */
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .home-top-selling-plant-img{
+        top: 0%;
     }
 }
