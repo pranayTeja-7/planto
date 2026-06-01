@@ -5,130 +5,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planto</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@1" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <header>
-        <a href="#" class="siteTitleLink">
-            <div class="siteTitleLogo">
-                <img src="images/plant 1.png" alt="Planto" class="siteLogo">
-                <h1 class="siteTitle">Planto.</h1>
-            </div>
-        </a>
-
-        <nav class="headerNav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li class="plantsType"><a href="#">Plants Type</a> <img src="images/Polygon 1.svg" alt="Polygon"> </li>
-                <li><a href="#">More</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-
-        <div class="headerSearchDiv">
-            <button><img src="images/search-interface-symbol 1.svg" alt="search"></button>
-            <a href="#"><img src="images/bag 1.svg" alt="bag"></a>
-            <button><img src="images/headerHam.svg" alt="menu" class="headerHam"></button>
-        </div>
-        <div class="hamMenu">
-            <ul>
-                <i class="material-symbols-outlined" class="hamClose">close</i>
-                <li><a href="#">Home</a></li>
-                <li class="plantsType"><a href="#">Plants Type</a> <img src="images/Polygon 1.svg" alt="Polygon"> </li>
-                <li><a href="#">More</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </header>
-    <section class="home-hero">
-        <div class="container home-hero-container">
-            <div class="home-hero-Heading">
-                <h2>Breath Natural</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <div class="home-hero-Links">
-                    <a href="#" class="explore">Explore</a>
-                    <a href="#" class="liveDemo">
-                        <div class="playButton"><img src="images/Polygon 2.svg" alt="play/pause"></div>
-                        <p>Live Demo...</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="home-hero-Plants">
-                <div class="home-hero-Plants-div">
-                    <img src="images/home-hero-plant1.png" alt="Calathea Plant">
-                    <div class="plantDetails">
-                        <h4>Trendy House Plant</h4>
-                        <h3>Calathea plant</h3>
-                        <a href="#" class="explore">Buy Now</a>
+    <div class="header-and-hero container">
+        <img src="images\heroBannerBg.png" alt="plant" class="header-and-hero-bg">
+        <header>
+            <div class="header-container container">
+                <a href="#" class="siteTitleLink">
+                    <div class="siteTitleLogo">
+                        <img src="images/plant 1.png" alt="Planto" class="siteLogo">
+                        <h1 class="siteTitle">Planto.</h1>
                     </div>
+                </a>
+
+                <nav class="headerNav">
+                    <ul class="header-nav-list">
+                        <li><a href="#">Home</a></li>
+                        <li class="plantsType">
+                            <a href="#">Plants Type</a> 
+                            <img src="images/Polygon 1.svg" alt="Polygon" class="plants-type-polygon">
+                            <ul class="plants-type-menu">
+                                <li>Type 1</li>
+                                <li>Type 2</li>
+                                <li>Type 3</li>
+                                <li>Type 4</li>
+                            </ul> 
+                        </li>
+                        <li><a href="#">More</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    
+                </nav>
+
+                <div class="headerSearchDiv">
+                    <button><img src="images/search-interface-symbol 1.svg" alt="search"></button>
+                    <a href="#"><img src="images/bag 1.svg" alt="bag"></a>
+                    <button><img src="images/headerHam.svg" alt="menu" class="headerHam"></button>
+                </div>
+                <div class="hamMenu">
+                    <ul>
+                        <button class="hamClose"><i class="material-symbols-outlined ">close</i></button>
+                        <li><a href="#">Home</a></li>
+                        <li class="plantsType">
+                            <a href="#">Plants Type</a> 
+                            <span class="material-symbols-outlined plants-type-polygon">arrow_drop_down</span>
+                            <ul class="plants-type-menu">
+                                <button class="plants-close"><i class="material-symbols-outlined">close</i></button>
+                                <li>Type 1</li>
+                                <li>Type 2</li>
+                                <li>Type 3</li>
+                                <li>Type 4</li>
+                            </ul> 
+                        </li>
+                        <li><a href="#">More</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
             </div>
+            
+        </header>
 
-            <div class="home-hero-Reviews">
-                <div class="reviewer">
-                    <img src="images/alena patel.png" alt="" class="profile">
-                    <div class="nameAndRating">
-                        <h3 class="name">alena Patel</h3>
-                        <div class="rating">
-                            <img src="images/Star.svg" alt="" class="star">
-                            <img src="images/Star.svg" alt="" class="star">
-                            <img src="images/Star.svg" alt="" class="star">
-                            <img src="images/Star.svg" alt="" class="star">
-                            <img src="images/Star.svg" alt="" class="star">
+
+        <section class="home-hero-section">
+            <div class="home-hero">
+                <div class="container home-hero-container">
+                    <div class="home-hero-Heading">
+                        <h2>Breath Natural</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="home-hero-Links">
+                            <a href="#" class="explore">Explore</a>
+                            <a href="#" class="liveDemo">
+                                <div class="play-button"><span class="material-symbols-rounded">play_arrow</span></div>
+                                <p>Live Demo...</p>
+                            </a>
                         </div>
                     </div>
+
+                    <div class="home-hero-Plants">
+
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="home-hero-Plants-div home-hero-Plants-div-1 ">
+                                        <img src="images/home-hero-plant1.png" alt="Calathea Plant">
+                                        <div class="plantDetails">
+                                            <h4>Trendy House Plant 1</h4>
+                                            <h3>Calathea plant</h3>
+                                            <a href="#" class="explore">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="home-hero-Plants-div home-hero-Plants-div-1 ">
+                                        <img src="images/home-hero-plant1.png" alt="Calathea Plant">
+                                        <div class="plantDetails">
+                                            <h4>Trendy House Plant 2</h4>
+                                            <h3>Calathea plant</h3>
+                                            <a href="#" class="explore">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="home-hero-Plants-div home-hero-Plants-div-1 ">
+                                        <img src="images/home-hero-plant1.png" alt="Calathea Plant">
+                                        <div class="plantDetails">
+                                            <h4>Trendy House Plant 3</h4>
+                                            <h3>Calathea plant</h3>
+                                            <a href="#" class="explore">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- If we need scrollbar -->
+                            <!-- <div class="swiper-scrollbar"></div> -->
+                        </div>
+
+                    </div>
+
+                    <div class="home-hero-Reviews">
+                        <div class="reviewer">
+                            <img src="images/alena patel.png" alt="" class="profile">
+                            <div class="nameAndRating">
+                                <h3 class="name">alena Patel</h3>
+                                <div class="rating">
+                                    <img src="images/Star.svg" alt="" class="star">
+                                    <img src="images/Star.svg" alt="" class="star">
+                                    <img src="images/Star.svg" alt="" class="star">
+                                    <img src="images/Star.svg" alt="" class="star">
+                                    <img src="images/Star.svg" alt="" class="star">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...
+                        </p>
+                    </div>
                 </div>
-                <p class="review">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <secction class="home-hero-trendyPlants"> 
-        <div class="container home-hero-trendyPlants-container">
-            <div class="home-hero-trendyPlants-Heading">
-                <div class="border border1"></div>
-                <h2>Our Trendy plants</h2>
-                <div class="border border2"></div>
             </div>
 
-            <div class="trendyPlantsDiv">
-                <div class="trendyPlant trendyPlant1">
-                    <img src="images/home-hero-trendyPlants-1.png" alt="" class="trendyPlantImage">
-                    <div class="trendyPlantDetail">
-                        <h3>For Small Decs Ai Plat</h3>
-                        <p class="trendyPlantDetailInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                        <h3 class="cost">Rs. 599/-</h3>
-                        <div class="exploreAndCart">
-                            <a href="#" class="explore">Explore</a>
-                            <div class="bagDiv">
-                                <img src="images/bag 1.svg" alt="bag" class="bag">
+            <div class="home-hero-trendyPlants"> 
+                <div class="container home-hero-trendyPlants-container">
+                    <div class="home-hero-trendyPlants-Heading">
+                        <div class="border border1"></div>
+                        <h2>Our Trendy plants</h2>
+                        <div class="border border2"></div>
+                    </div>
+
+                    <div class="trendyPlantsDiv">
+                        <div class="trendyPlant trendyPlant1">
+                            <img src="images/home-hero-trendyPlants-1.png" alt="" class="trendyPlantImage">
+                            <div class="trendyPlantDetail">
+                                <h3>For Small Decs Ai Plat</h3>
+                                <p class="trendyPlantDetailInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                <h3 class="cost">Rs. 599/-</h3>
+                                <div class="exploreAndCart">
+                                    <a href="#" class="explore">Explore</a>
+                                    <div class="bagDiv">
+                                        <img src="images/bag 1.svg" alt="bag" class="bag">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="trendyPlant trendyPlant2">
+                                <img src="images/home-hero-trendyPlants-2.png" alt="" class="trendyPlantImage">
+                            <div class="trendyPlantDetail">
+                                <h3>For Small Decs Ai Plat</h3>
+                                <p class="trendyPlantDetailInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                <h3 class="cost">Rs. 599/-</h3>
+                                <div class="exploreAndCart">
+                                    <a href="#" class="explore">Explore</a>
+                                    <div class="bagDiv">
+                                        <img src="images/bag 1.svg" alt="bag" class="bag">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="trendyPlant trendyPlant2">
-                        <img src="images/home-hero-trendyPlants-2.png" alt="" class="trendyPlantImage">
-                    <div class="trendyPlantDetail">
-                        <h3>For Small Decs Ai Plat</h3>
-                        <p class="trendyPlantDetailInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                        <h3 class="cost">Rs. 599/-</h3>
-                        <div class="exploreAndCart">
-                            <a href="#" class="explore">Explore</a>
-                            <div class="bagDiv">
-                                <img src="images/bag 1.svg" alt="bag" class="bag">
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
 
     <script src="js/script.js"></script>    
