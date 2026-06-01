@@ -60,6 +60,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: clamp(0px, 3.298%, 57px);
+    width: 100%;
 }
 
 .siteTitleLogo{
@@ -544,7 +545,7 @@ header{
         font-size: clamp(14px, 3vw, 23px);
     }
     .home-hero-Plants{
-        width: 93.5vw;
+        width: 100%;
         height: clamp(176px, 38.46vw, 295px);
         
         padding: 0 clamp(20px, 5vw, 40px);
