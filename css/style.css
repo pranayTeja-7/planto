@@ -382,7 +382,7 @@ header{
     display: grid;
     grid-template-areas: "home-hero-Heading home-hero-Plants"
                          "home-hero-Reviews home-hero-Plants";  
-    padding: clamp(20px, 6.02vw, 104px) clamp(20px, 3.298vw, 57px) clamp(40px, 4vw, 69px);
+    padding: clamp(20px, 6.02vw, 104px) clamp(25px, 3.298vw, 57px) clamp(40px, 4vw, 69px);
     
 }
 
@@ -627,7 +627,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 clamp(20px, 3.298vw, 57px);
+    padding: 0 clamp(25px, 3.298vw, 57px);
     width: 100%;
 }
 
@@ -806,15 +806,15 @@ header{
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 143px;
+    padding-top: clamp(0px, 8.275vw, 143px);
 }
 
 .home-top-selling-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 clamp(20px, 3.298vw, 57px);
-    gap: 189px;
+    padding: 0 clamp(25px, 3.298vw, 57px);
+    gap: clamp(0px, 10.93vw, 189px);
 }
 
 .home-top-selling-div{
@@ -832,7 +832,7 @@ header{
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 77px;
     /* padding: 0px 74px 51px 66px; */
-    padding: 0px clamp(0px, 3.82vw, 66px) clamp(0px, 3vw, 51px);
+    padding: 0px clamp(0px, 3.82vw, 66px) clamp(25px, 3vw, 51px);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -844,7 +844,7 @@ header{
     width: 89.64%;
     position: absolute;
     left: 6%;
-    top: -17%;
+    top: -19%;
     z-index: -1;
 }
 
@@ -895,7 +895,7 @@ header{
 @media only screen and (max-width: 1280px){
     .home-top-selling-div{
         grid-template-columns: repeat(2, 44%);
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .home-top-selling-plant{
@@ -905,6 +905,39 @@ header{
 
 @media only screen and (max-width: 992px) {
     .home-top-selling-plant-img{
-        top: 0%;
+        top: 6%;
+    }
+
+    .home-top-selling-plant-img{
+        opacity: 0.6;
+    }
+
+    .home-top-selling-plant-details h3{
+        color: #fff;
+        font-size: clamp(0px, 3.83vw, 38px);
+    }
+
+    .home-top-selling-plant-details p{
+        color: #fff;
+        font-size: clamp(0px, 2.42vw, 24px);
+    }
+
+    .home-top-selling-plant-cost-div .bagDiv{
+        opacity: 1;
+        width: clamp(0px, 5.55vw, 55px);
+        border-radius: clamp(0px, 1.21vw, 12px);
+        height: clamp(0px, 5.55vw, 55px);
+    }
+
+    .home-top-selling-div{
+        row-gap: clamp(0px, 6vw, 60px);
+    }
+
+    .home-top-selling-plant{
+        border-radius: clamp(0px, 7.76vw, 77px);
+    }
+
+    .home-top-selling-plant-details{
+        gap: clamp(0px, 3.73vw, 37px)
     }
 }
